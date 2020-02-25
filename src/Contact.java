@@ -21,8 +21,8 @@ public class Contact {
         Node temp = top;
         int flag = 0;
         while (temp != null) {
-            if (temp.data.fname.equals(fna)) {
-                display(temp.data);
+            if (temp.dat.fname.equals(fna)) {
+                display(temp.dat);
                 flag = 1;
                 break;
             }
@@ -36,7 +36,7 @@ public class Contact {
     public void viewcontact() {
         Node temp = top;
         while (temp != null) {
-            display(temp.data);
+            display(temp.dat);
             temp = temp.next;
         }
     }
@@ -44,14 +44,14 @@ public class Contact {
     public void delete(String name) {
         if (isempty()) {
             System.out.println("No Data Found...");
-        } else if (top.data.getFname().equals(name)) {
+        } else if (top.dat.getFname().equals(name)) {
             top = top.next;
         } else {
             Node temp = top;
             Node temp2 = null;
             while (temp != null) {
-                System.out.println(temp.data.getFname());
-                if (temp.data.getFname().equals(name)) {
+                System.out.println(temp.dat.getFname());
+                if (temp.dat.getFname().equals(name)) {
                     temp2.next = temp.next;
                 }
                 temp2 = temp;
