@@ -6,8 +6,7 @@ public class ContactMain {
         Scanner scan = new Scanner(System.in);
         Contact cn = new Contact();
         ArrayList<String> mob = new ArrayList<>();
-        int f = 0;
-        while (true && f == 0) {
+        while (true) {
             System.out.println("Contact Menu");
             System.out.println("Press 1 : Add Contact");
             System.out.println("Press 2 : View All Contact");
@@ -64,7 +63,7 @@ public class ContactMain {
                     cn.delete(ss);
                     break;
                 case 5:
-                    f = 1;
+                    System.exit(0);
                 default:
                     System.out.println("Not A Valid Entry");
             }
