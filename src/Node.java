@@ -1,8 +1,8 @@
 public class Node {
-    Person data;
+    Person dat;
     Node next;
 
     Node(Person data) {
-        this.data = data;
+        this.dat = data;
     }
 }
