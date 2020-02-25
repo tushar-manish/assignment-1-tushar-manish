@@ -5,8 +5,8 @@ public class ContactMain {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         Contact cn = new Contact();
-        ArrayList<String> mob = new ArrayList<>();
         while (true) {
+            ArrayList<String> mob = new ArrayList<>();
             System.out.println("Contact Menu");
             System.out.println("Press 1 : Add Contact");
             System.out.println("Press 2 : View All Contact");
